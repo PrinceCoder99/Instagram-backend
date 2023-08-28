@@ -29,6 +29,6 @@ app.post('/', async (req, res)=>{
 
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log(`Instagram app listening on port http://localhost:${process.env.PORT}`)
 })
